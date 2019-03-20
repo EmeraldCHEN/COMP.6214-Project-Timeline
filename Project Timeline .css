@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project Timeline</title>
-</head>
-<body>
-    <style>
+
         * {
             box-sizing: border-box;
         }
@@ -20,6 +11,62 @@
         .main-title {
             text-align: center;
             color: rgb(44, 44, 44);
+        }
+
+        /* Auto-fill grids of weeks*/
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            grid-gap:2vw;
+            margin: 5%;
+        }
+        .grid > div {
+            
+            font-size: 1.5vw;
+            padding: .3em;
+            background: rgba(252, 235, 88, 0.973);
+            text-align: center;
+            border-radius:10px;
+        }
+        .grid a {
+            color: rgb(9, 139, 253);
+        }
+
+        #more {
+            display: none;
+            padding-left: 32%;
+        }
+        .more li {
+            list-style-type: square;
+        }
+
+        #readBtn {
+            position: absolute;
+            right: 8%;
+            font-size: 1.1em;
+            color: orangered;
+            border: solid orangered 1px;
+            background-color: rgba(250, 250, 248, 0.781);
+            padding: 0.2em 1.5em;
+            border-radius: 10px;
+        }
+        #readBtn:hover {
+            background-color: rgba(250, 238, 129, 0.973);
+        }
+
+        .remaining-time {
+            text-align: center;
+            border-style: dotted;
+            border-color: rgba(95, 186, 189, 0.637);
+            width: 50%;
+            margin:2% 25%;
+            padding: 1.5em 0.5em 0 0.5em;
+            margin: 5em auto 2em auto; 
+        }
+        #countdown {
+            color: crimson;
+            font-size: 1.2em;
         }
 
         /* The actual timeline (the vertical ruler) */
@@ -104,6 +151,11 @@
             position: relative;
             border-radius: 6px;
         }
+        @media screen and (max-width: 1200px) {
+            .grid > div {
+                font-size: 2.5vw;
+            }
+        }
          /* Media queries - Responsive timeline on screens less than 860px wide */
         @media screen and (max-width: 860px) {
             .content {
@@ -143,7 +195,17 @@
             .right {
                 left: 0%;
             }
+            .grid > div {
+            
+                font-size: 3.5vw;
+            }
         }
+        @media screen and (max-width: 500px) {
+            .grid > div {  
+                font-size: 5.5vw;
+            }
+        }
+
         .task-form {
             line-height: 1.6em;
             margin-left: 10%;
@@ -161,70 +223,7 @@
             text-decoration-line: underline;
             text-decoration-style: wavy;
         }
-    </style>
-    <h1 class="main-title">COMP.6214
-       <br /><br> Project  Timeline <br>
-    </h1>
-    <div class="timeline">
-        <div class="container left">
-            <div class="content">
-            <h2>Week 1 </h2>
-            <h3 class="date-title">( 4 Mar - 8 Mar 2019 )</h3>
-            
-            <form action="#" class="task-form">
-                <input type="checkbox" name="task1" value="#"> Continue to learn React.js<br>
-                <input type="checkbox" name="task22" value="#"> Summarize the website usability assessment <br><br>
-                <!-- <input type="checkbox" name="task3" value="#" checked>  -->
-            </form> 
-            <a class="detail-link" href="#" target="_blank">Click here to find more details</a> 
-            <br><br>         
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-            <h2>Week 2 </h2>
-            <h3 class="date-title">( 11 Mar - 15 Mar 2019 )</h3>
-            
-            <form action="#" class="task-form">
-                <input type="checkbox" name="task1" value="#"> Continue to learn React.js<br>
-                <input type="checkbox" name="task22" value="#"> Summarize the website usability assessment <br><br>
-                <!-- <input type="checkbox" name="task3" value="#" checked>  -->
-            </form> 
-            <a class="detail-link" href="#" target="_blank">Click here to find more details</a> 
-            <br><br>           
-            </div>
-        </div>
-        <div class="timeline">
-            <div class="container left">
-                <div class="content">
-                <h2>Week 3 </h2>
-                <h3 class="date-title">( 4 Mar - 8 Mar 2019 )</h3>
-                
-                <form action="#" class="task-form">
-                    <input type="checkbox" name="task1" value="#"> Continue to learn React.js<br>
-                    <input type="checkbox" name="task22" value="#"> Summarize the website usability assessment <br><br>
-                    <!-- <input type="checkbox" name="task3" value="#" checked>  -->
-                </form> 
-                <a class="detail-link" href="#" target="_blank">Click here to find more details</a> 
-                <br><br>         
-                </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                <h2>Week 4 </h2>
-                <h3 class="date-title">( 11 Mar - 15 Mar 2019 )</h3>
-                
-                <form action="#" class="task-form">
-                    <input type="checkbox" name="task1" value="#"> Continue to learn React.js<br>
-                    <input type="checkbox" name="task22" value="#"> Summarize the website usability assessment <br><br>
-                    <!-- <input type="checkbox" name="task3" value="#" checked>  -->
-                </form> 
-                <a class="detail-link" href="#" target="_blank">Click here to find more details</a> 
-                <br><br>           
-                </div>
-            </div>
-
-    
-
-</body>
-</html>
+.milestone {
+    color: seagreen;
+}
+  
