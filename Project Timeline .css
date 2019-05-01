@@ -50,6 +50,7 @@
             background-color: rgba(250, 250, 248, 0.781);
             padding: 0.2em 1.5em;
             border-radius: 10px;
+            cursor: pointer;
         }
         #readBtn:hover {
             background-color: rgba(250, 238, 129, 0.973);
@@ -223,7 +224,11 @@
             text-decoration-line: underline;
             text-decoration-style: wavy;
         }
-.milestone {
-    color: seagreen;
+    .milestone {
+        color: seagreen;
+    }
+.back {
+    font-size: 20em;
+    margin-top: 20em;
 }
   

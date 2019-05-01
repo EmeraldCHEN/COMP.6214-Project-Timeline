@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Timeline</title>
+    <link rel="stylesheet" href="#">
+    <style>
+        .link1 { grid-area: link1; }
+        .link2 { grid-area: link2; }
+        .link3 { grid-area: link3; }
+        .link4 { grid-area: link4; }
+        .link5 { grid-area: link5; }
+        .link6 { grid-area: link6; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'link1 link2'
+            'link3 link4'
+            'link5 link6';
+          grid-gap: 10px;
+          background-color: rgb(252, 204, 182);
+          padding: 10px;
+        }
+        @media only screen and (max-width: 600px){
+            .grid-container {
+            
+            grid-template-areas:
+                'link1'
+                'link2'
+                'link3'
+                'link4'
+                'link5'
+                'link6';
+            }
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: left;
+            padding: 15px 20px;
+            font-size: 16px;
+        }
+
+        </style>
+</head>
+<body align="center">
+    <style>
+      
+    </style>
+    <br>
+    <h2 class="main-title">COMP.6214
+       <br /><br> 
+       Project  Week 6
+       <br /><br> 
+    </h2>
+    
+    <h3 style="color:chocolate"> * 1. Select the proper WordPress theme </h3>
+    <p>After testing some themes, I finally decided to choose Responsive Theme.</p>
+    <img src="../images/themes_1.PNG" alt="Homepage Icon" width="50%">
+    <img src="../images/themes_2.PNG" alt="Homepage Icon" width="50%">
+    <img src="../images/themes_3.PNG" alt="Homepage Icon" width="50%">
+
+    <br><br><br>
+    <h3 style="color:chocolate"> * 2. Homepage and two other web pages creation with free hosting 000webhost </h3> 
+    <p> Because of forgetting WordPress login password, also inspired by <a href="https://frankknow.com/website-build-teach/" target="_blank">this post</a> I created the homepage plus other 2 pages on the free hosting </p>
+    <p><a href="https://emeraldchen.000webhostapp.com/" target="_blank">LINK TO DEMO</a></p>
+
+    <p>Improvements as below.</p>
+    <ul>
+        <h3>1 . Favicon </h3>
+        <li> <h4>Before</h4>
+             <img src="../images/Favicon/Favicon Before.PNG" alt="Favicon Before" width="40%"/>
+        </li>
+        <li> <h4>After</h4>
+            <img src="../images/Favicon/Favicon After.PNG" alt="Favicon After" width="40%"/>
+            <p>As no images received from the client, I could only make use of images available on <a href="https://crf.org.nz/" target="_blank">their current website</a> </p>
+        </li>
+        <h3>2. Mobile-friendly, call to action to donate on the home page and ‘Contact us’ easily seen</h3>
+        <li> <h4>Before</h4>
+            <img src="../images/Homepage/Homepage_1.PNG" alt="Former homepage" width="40%"/>
+        <li> <h4>After</h4>
+           
+            <img src="../images/Homepage/Homepage_NEW.PNG" alt="New homepage" width="40%"/>
+    </ul>
+    <br>
+    <h3 style="color:chocolate"> * 3.   Learn to reset  WordPress password on localhost and email function </h3>
+    <p>  This issue happened unexpectedly. When I wanna log in WordPress on WAMPSERVER, I forgot the password.</p>
+    <p> Naturally I clicked 'Lost your password?' which turned to the below webpage. </p>
+    <img src="../images/Could NOT set email.PNG" alt="Could NOT sent email" width="60%" />
+    <img src="../images/Internal Server Error.PNG" alt="Internal Server Error" width="60%" />
+    
+
+    <p>Again Google helped me find the solusion. It could use phpMyAdmin to reset the password. The following materials also mention the related email issue.</p>
+
+    <div class="grid-container">
+        <div class="link1"><a href="https://www.youtube.com/watch?v=C4LIkyQd5nM" target="_blank">
+            1. How to Reset WordPress Password on Localhost </a>
+        </div>
+        <div class="link2"><a href="https://www.wpbeginner.com/plugins/how-to-receive-wordpress-emails-from-localhost/" target="_blank"> 
+            2. How to Receive WordPress Emails from Localhost </a>
+        </div>
+        <div class="link3"><a href="https://wordpress.stackexchange.com/questions/95016/wordpress-refuses-to-send-mail-your-host-may-have-disabled-the-mail-funct" target="_blank">
+            3. Your host may have disabled the mail() function</a>
+        </div>  
+        <div class="link4"><a href="https://www.hawkdive.com/your-host-may-have-disabled-the-mail-function/#smtpBlock" target="_blank">
+            4. Wordpress refuses to send mail, “…your host may have disabled the mail() function” </a>
+        </div>
+          
+    </div>
+
+   
+    <br>
+    <a href="../index.html" ><p class="back">Back to <img src="../images/homepageIcon.PNG" alt="Homepage Icon" width="2%"> </p></a>
+    <br>
+ 
+
+</body>
+</html>

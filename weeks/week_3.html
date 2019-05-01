@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Timeline</title>
+    <link rel="stylesheet" href="#">
+    <style>
+        .link1 { grid-area: link1; }
+        .link2 { grid-area: link2; }
+        .link3 { grid-area: link3; }
+        .link4 { grid-area: link4; }
+        .link5 { grid-area: link5; }
+        .link6 { grid-area: link6; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'link1 link2'
+            'link3 link4'
+            'link5 link6';
+          grid-gap: 10px;
+          background-color: #2196F3;
+          padding: 10px;
+        }
+        @media only screen and (max-width: 600px){
+            .grid-container {
+            
+            grid-template-areas:
+                'link1'
+                'link2'
+                'link3'
+                'link4'
+                'link5'
+                'link6';
+            }
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: left;
+            padding: 15px 20px;
+            font-size: 16px;
+        }
+
+        </style>
+</head>
+<body align="center">
+    <style>
+      
+    </style>
+    <br>
+    <h2 class="main-title">COMP.6214
+       <br /><br> 
+       Project  Week 4
+       <br /><br> 
+    </h2>
+    <br>
+    <h3 style="color:chocolate"> * 1.   Learn to set up local WordPress development environment </h3>
+    <p>  The materials below are the main sources for what I learned to set up local WordPress development environment.</p>
+    <div class="grid-container">
+        <div class="link1"><a href="https://www.smashingmagazine.com/2018/04/wordpress-local-development-beginners-setup-deployment/" target="_blank">
+            1. WordPress Local Development For Beginners: From Setup To Deployment</a>
+        </div>
+        <div class="link2"><a href="https://pressable.com/2018/04/30/how-to-setup-a-local-wordpress-development-environment/" target="_blank"> 
+            2. How to Setup a Local WordPress Development Environment</a>
+        </div>
+        <div class="link3"><a href="https://www.realwebsitehints.com/how-to-install-wordpress-locally-on-windows/" target="_blank">
+            3. How To Install WordPress Locally on Windows</a>
+        </div>  
+        <div class="link4"><a href="https://make.wordpress.org/core/handbook/tutorials/installing-a-local-server/" target="_blank">
+            4. Installing a Local Server</a>
+        </div>
+        <div class="link5"><a href="https://www.youtube.com/watch?v=tmje6tmuFsk" target="_blank">
+            5. How to Install Wordpress Locally on Wamp Server 2018</a>
+        </div>
+        <div class="link6"><a href="https://www.youtube.com/watch?v=0RCnEPtqKJ4" target="_blank">
+            6. How to Install & Host WordPress Locally using WAMP</a>
+        </div>
+        <div class="link7"><a href="https://localbyflywheel.com/" target="_blank">
+            7. Local by Flywheel</a>
+        </div>
+        <div class="link8"><a href="https://premium.wpmudev.org/blog/improve-wordpress-development-workflow-local-server/" target="_blank">
+            8. No More Cowboy Coding: Improving Your WordPress Workflow</a>
+        </div>
+        <div class="link9"><a href="https://premium.wpmudev.org/blog/set-up-wordpress-locally-with-desktopserver/" target="_blank">
+            9.How to Set Up WordPress Locally in 5 Minutes with DesktopServer</a>
+        </div>
+        <div class="link10"><a href="http://www.wampserver.com/en/" target="_blank">
+            10. WAMPSERVER, a Windows web development environment</a>
+        </div>   
+    </div>
+
+    <br>
+    
+    
+    <a href="../index.html" ><p class="back">Back to <img src="../images/homepageIcon.PNG" alt="Homepage Icon" width="2%"> </p></a>
+    <br>
+ 
+
+</body>
+</html>
