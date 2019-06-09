@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Timeline</title>
+    <link rel="stylesheet" href="#">
+</head>
+<body align="center">
+    <style>
+      
+    </style>
+    <br>
+    <h2 class="main-title">COMP.6214
+       <br /><br> 
+       Project  Week 13
+       <br> 
+    </h2>
+    <br>
+    <h3 style="color:chocolate"> * 1.  Try another free web hosting   </h3>
+
+    <P> After comparing a couple of free web hosting sites suggested in <a href="https://hostingfacts.com/free-web-hosting-sites/" target="_blank">7 “Best” Free Web Hosting Sites (2019)</a>
+        I chose InfinityFree.net and used it to host the WordPress site.      
+    </P>
+    <h3 style="color:chocolate"> * 2.  Move WordPress from localhost to live server   </h3>   
+    <P> 1) Tried the Duplicator plugin by following the instruction from <a href="https://www.wpbeginner.com/wp-tutorials/how-to-move-wordpress-from-local-server-to-live-site/" target="_blank">How to Move WordPress From Local Server to Live Site (2 Methods)</a>
+    </P><p>But when connected to the live site using an FTP client, there was an error and hence no file could be upload from local server to live site
+    </P>
+    <p> Even though I tried to learn a bit of FTP from the online torurial 
+        <a href="https://www.google.com/search?q=connect+to+your+live+site+using+an+FTP+client&rlz=1C1CHZL_enNZ778NZ778&oq=connect+to+your+live+site+using+an+FTP+client&aqs=chrome..69i57&sourceid=chrome&ie=UTF-8#kpvalbx=1</p>
+        " target="_blank">How to connect to your WordPress Website with FTP</a>
+        
+    <p> 2) Tried another plugin All-In-One WP Migration by following the instruction from <a href="https://blog.templatetoaster.com/move-wordpress-localhost-to-live-server/" target="_blank">How to Move WordPress from Localhost to Live Server : Beginners Guide</a>
+    </p>
+    <p>
+        However, the imported file exceeds the maximum upload size for this site: 10 MB
+    </p>
+    <p>So here's the solution to <a href="https://help.servmask.com/2018/10/27/how-to-increase-maximum-upload-file-size-in-wordpress/" target="_blank">How to Increase Maximum Upload File Size in WordPress</a></p>
+    <ul>
+        <li>Download the plugin <a href="https://import.wp-migration.com" target="_blank">All-in-One WP Migration Import</a></li>
+        <li>Installed the above plugin by following the instruction from <a href="https://help.servmask.com/knowledgebase/install-instructions-for-file-extension/" target="_blank">Install Instructions for File Extension</a></li>
+        <li>Finally, the site was moved from local host to a live site </li>
+        <br>
+        <img src="../images/Site imported.PNG" alt="Site impoted" width="56%">
+    </ul>
+ 
+    <h3 style="color:chocolate"> * 3.  Check and fix missing images and broken links on the live site before user testing  </h3>
+  
+    <p>
+        Mainly fixed the React page as a vulnerable dependency detected by GitHub and they suggested to  upgrade querystringify >= 2.0.0 defined in package-lock.json.
+        
+    </p>
+    <p>
+        Also updated some styles links and etc. and updated the React App in GitHub Pages
+    </p>
+   
+    <br>
+    <a href="../index.html" ><p class="back">Back to <img src="../images/homepageIcon.PNG" alt="Homepage Icon" width="2%"> </p></a>
+    <br> 
+
+</body>
+</html>
